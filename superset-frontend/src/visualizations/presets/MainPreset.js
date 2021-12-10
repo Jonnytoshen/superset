@@ -52,7 +52,7 @@ import {
   LineMultiChartPlugin,
   TimePivotChartPlugin,
 } from '@superset-ui/legacy-preset-chart-nvd3';
-import { DeckGLChartPreset } from '@superset-ui/legacy-preset-chart-deckgl';
+// import { DeckGLChartPreset } from '@superset-ui/legacy-preset-chart-deckgl';
 import {
   EchartsPieChartPlugin,
   EchartsBoxPlotChartPlugin,
@@ -80,6 +80,8 @@ import {
   GroupByFilterPlugin,
 } from 'src/filters/components/';
 import { PivotTableChartPlugin as PivotTableChartPluginV2 } from '@superset-ui/plugin-chart-pivot-table';
+import { DeckGLChartPreset } from '@sspingme/superset-ui-preset-deckgl';
+import RaceBarChartPlugin from '@sspingme/superset-ui-plugin-race-bar';
 import FilterBoxChartPlugin from '../FilterBox/FilterBoxChartPlugin';
 import TimeTableChartPlugin from '../TimeTable/TimeTableChartPlugin';
 
@@ -161,11 +163,13 @@ export default class MainPreset extends Preset {
           key: 'echarts_timeseries_step',
         }),
         new SelectFilterPlugin().configure({ key: 'filter_select' }),
+        // new SupersetUiPresetDeckglChartPlugin().configure({ key: 'deckgl_demo' }),
         new RangeFilterPlugin().configure({ key: 'filter_range' }),
         new TimeFilterPlugin().configure({ key: 'filter_time' }),
         new TimeColumnFilterPlugin().configure({ key: 'filter_timecolumn' }),
         new TimeGrainFilterPlugin().configure({ key: 'filter_timegrain' }),
         new EchartsTreeChartPlugin().configure({ key: 'tree_chart' }),
+        new RaceBarChartPlugin().configure({ key: 'race_bar' }),
         ...experimentalplugins,
       ],
     });

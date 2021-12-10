@@ -82,6 +82,8 @@
     "@emotion/cache": "^11.4.0",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
+    "@sspingme/superset-ui-plugin-race-bar": "^0.1.0",
+    "@sspingme/superset-ui-preset-deckgl": "^0.0.1",
     "@superset-ui/chart-controls": "^0.18.25",
     "@superset-ui/core": "^0.18.25",
     "@superset-ui/legacy-plugin-chart-calendar": "^0.18.25",

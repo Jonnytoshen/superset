@@ -1,0 +1,34 @@
+{
+  "id": "tianditu_terrain",
+  "name": "tianditu_terrain",
+  "layers": [
+    {
+      "id": "tianditu_terrain__ter_w",
+      "type": "raster",
+      "source": "ter_w"
+    },
+    {
+      "id": "tianditu_terrain__cta_w",
+      "type": "raster",
+      "source": "cta_w"
+    }
+  ],
+  "sources": {
+    "ter_w": {
+      "type": "raster",
+      "tiles": [
+        "http://t0.tianditu.com/DataServer?T=ter_w&x={x}&y={y}&l={z}&tk=64291a2d90d8898bfdc38cba6959c43e"
+      ],
+      "tileSize": 256
+    },
+    "cta_w": {
+      "type": "raster",
+      "tiles": [
+        "http://t0.tianditu.com/DataServer?T=cta_w&x={x}&y={y}&l={z}&tk=64291a2d90d8898bfdc38cba6959c43e"
+      ],
+      "tileSize": 256
+    }
+  },
+  "version": 8,
+  "metadata": { }
+}

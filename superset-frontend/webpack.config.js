@@ -129,6 +129,7 @@ const plugins = [
     patterns: [
       'package.json',
       { from: 'src/assets/images', to: 'images' },
+      { from: 'src/assets/tianditu', to: 'tianditu' },
       { from: 'src/assets/stylesheets', to: 'stylesheets' },
     ],
   }),

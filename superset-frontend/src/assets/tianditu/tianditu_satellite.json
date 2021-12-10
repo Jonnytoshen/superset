@@ -1,0 +1,34 @@
+{
+  "id": "tianditu_satellite",
+  "name": "tianditu_satellite",
+  "layers": [
+    {
+      "id": "tianditu_satellite__img_w",
+      "type": "raster",
+      "source": "img_w"
+    },
+    {
+      "id": "tianditu_satellite__cia_w",
+      "type": "raster",
+      "source": "cia_w"
+    }
+  ],
+  "sources": {
+    "img_w": {
+      "type": "raster",
+      "tiles": [
+        "http://t0.tianditu.com/DataServer?T=img_w&x={x}&y={y}&l={z}&tk=64291a2d90d8898bfdc38cba6959c43e"
+      ],
+      "tileSize": 256
+    },
+    "cia_w": {
+      "type": "raster",
+      "tiles": [
+        "http://t0.tianditu.com/DataServer?T=cia_w&x={x}&y={y}&l={z}&tk=64291a2d90d8898bfdc38cba6959c43e"
+      ],
+      "tileSize": 256
+    }
+  },
+  "version": 8,
+  "metadata": { }
+}
